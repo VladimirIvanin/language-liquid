@@ -1,0 +1,64 @@
+'.liquid':
+  'Liquid product.id':
+    'prefix': 'prodid'
+    'body': '{{ product.id }}'
+
+  'Liquid product.title':
+    'prefix': 'prodtitle'
+    'body': '{{ product.title }}'
+
+  'Liquid product.handle':
+    'prefix': 'prodhandle'
+    'body': '{{ product.handle }}'
+
+  'Liquid product.price':
+    'prefix': 'prodprice'
+    'body': '{{ product.price }}'
+
+  'Liquid product.price_min':
+    'prefix': 'prodpricemin'
+    'body': '{{ product.price_min }}'
+
+  'Liquid product.price_max':
+    'prefix': 'prodpricemax'
+    'body': '{{ product.price_max }}'
+
+  'Liquid product.price_varies':
+    'prefix': 'productpv'
+    'body': '{{ product.price_varies? }}'
+
+  'Liquid product.url':
+    'prefix': 'produrl'
+    'body': '{{ product.url }}'
+
+  'Liquid product.images':
+    'prefix': 'prodimages'
+    'body': '{{ product.images }}'
+
+  'Liquid product.first_image':
+    'prefix': 'prodfirstimage'
+    'body': '{{ product.first_image.large_url }}'
+
+  'Liquid product.description':
+    'prefix': 'proddesc'
+    'body': '{{ product.description }}'
+
+  'Liquid product.short_description':
+    'prefix': 'prodshortdesc'
+    'body': '{{ product.short_description }}'
+
+  'Liquid product.variants':
+    'prefix': 'prodvar'
+    'body': '{{ product.variants }}'
+
+  'Liquid product.available':
+    'prefix': 'prodavail'
+    'body': '{{ product.available }}'
+
+  'Liquid product.collections':
+    'prefix': 'prodcols'
+    'body': '{{ product.collections }}'
+
+  'Liquid product.options':
+    'prefix': 'prodopts'
+    'body': '{{ product.options }}'

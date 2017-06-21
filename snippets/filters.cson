@@ -1,0 +1,142 @@
+'.liquid':
+  'Liquid date now year':
+    'prefix': 'datenowy'
+    'body': "{{ 'now' | date: '%Y' }}"
+
+  'Liquid created_at':
+    'prefix': 'created_at'
+    'body': "created_at | date: '%d.%m.%Y'"
+
+  'Liquid asset (local)':
+    'prefix': 'assu'
+    'body': """
+    {{ '${1}' | asset_url }}
+    """
+
+  'Liquid asset_url_if_exists':
+    'prefix': 'assuie'
+    'body': """
+    {{ '${1}' | asset_url_if_exists }}
+    """
+
+  'Liquid small_url 48x48':
+    'prefix': 'small_url'
+    'body': """
+    small_url
+    """
+
+  'Liquid thumb_url 100x100':
+    'prefix': 'thumb_url'
+    'body': """
+    thumb_url
+    """
+
+  'Liquid compact_url 160x160':
+    'prefix': 'compact_url'
+    'body': """
+    compact_url
+    """
+
+  'Liquid medium_url 240x240':
+    'prefix': 'medium_url'
+    'body': """
+    medium_url
+    """
+
+  'Liquid large_url 480x480':
+    'prefix': 'large_url'
+    'body': """
+    large_url
+    """
+
+  'Liquid original image':
+    'prefix': 'original_url'
+    'body': """
+    original_url
+    """
+
+  'Liquid file (local)':
+    'prefix': 'fileu'
+    'body': """
+    {{ '${1}' | file_url }}
+    """
+
+  'Liquid replace':
+    'prefix': 'repl'
+    'body': "| replace: '${1:substring}', '${2:replacement}'"
+
+  'Liquid append':
+    'prefix': 'append'
+    'body': "| append: '${1}'"
+
+  'Liquid prepend':
+    'prefix': 'prepend'
+    'body': "| prepend: '${1}'"
+
+  'Liquid sort':
+    'prefix': 'sort'
+    'body': "| sort: '${1}'"
+
+  'Liquid downcase':
+    'prefix': 'downcase'
+    'body': "| downcase"
+
+  'Liquid UPPERCASE':
+    'prefix': 'upcase '
+    'body': "| upcase"
+
+  'Liquid capitalize':
+    'prefix': 'capitalize '
+    'body': "| capitalize"
+
+  'Liquid editable':
+    'prefix': 'editable '
+    'body': "| editable"
+
+  'Liquid newline_to_br':
+    'prefix': 'newline_to_br '
+    'body': "| newline_to_br"
+
+  'Liquid strip_html':
+    'prefix': 'strip_html '
+    'body': "| strip_html"
+
+  'Liquid escape':
+    'prefix': 'escape '
+    'body': "| escape"
+
+  'Liquid truncate':
+    'prefix': 'truncate '
+    'body': "| truncate: ${1:100}"
+
+  'Liquid money':
+    'prefix': 'money '
+    'body': "| money"
+
+  'Liquid plus':
+    'prefix': 'plus '
+    'body': "| plus: ${1:1}"
+
+  'Liquid minus':
+    'prefix': 'minus '
+    'body': "| minus: ${1:1}"
+
+  'Liquid times':
+    'prefix': 'times '
+    'body': "| times: ${1:2}"
+
+  'Liquid divided_by':
+    'prefix': 'divided_by '
+    'body': "| divided_by: ${1:2}"
+
+  'Liquid round':
+    'prefix': 'round '
+    'body': "| round: ${1:0}"
+
+  'Liquid modulo':
+    'prefix': 'modulo '
+    'body': "| modulo: ${1:100}"
+
+  'Liquid limit':
+    'prefix': 'limit '
+    'body': "limit: ${1}"

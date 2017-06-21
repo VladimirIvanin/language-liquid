@@ -1,0 +1,28 @@
+'.liquid':
+  'Liquid collection.id':
+    'prefix': 'colid'
+    'body': '{{ collection.id }}'
+
+  'Liquid collection.title':
+    'prefix': 'coltitle'
+    'body': '{{ collection.title }}'
+
+  'Liquid collection.handle':
+    'prefix': 'colhandle'
+    'body': '{{ collection.handle }}'
+
+  'Liquid collection.description':
+    'prefix': 'coldesc'
+    'body': '{{ collection.description }}'
+
+  'Liquid collection.products':
+    'prefix': 'colprods'
+    'body': '{{ collection.products }}'
+
+  'Liquid collection.products_count':
+    'prefix': 'colprodscount'
+    'body': '{{ collection.products_count }}'
+
+  'Liquid collection.url':
+    'prefix': 'colurl'
+    'body': '{{ collection.url }}'

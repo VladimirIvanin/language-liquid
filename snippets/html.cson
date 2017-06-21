@@ -1,0 +1,96 @@
+'.liquid':
+  'Liquid link asset (local)':
+    'prefix': 'linkassu'
+    'body': """
+    <link href="{{ '${1}' | asset_url }}" rel="stylesheet" type="text/css" />
+    """
+
+  'Liquid script asset (local)':
+    'prefix': 'scriptassu'
+    'body': """
+    <script src="{{ '${1}' | asset_url }}"></script>
+    """
+
+  'Liquid link menu':
+    'prefix': 'alink'
+    'body': """
+    <a class="${1}" href="{{ link.url }}">
+      {{ link.title }}
+    </a>
+    """
+
+  'Liquid product link':
+    'prefix': 'aprodlinktitle'
+    'body': """
+    <a class="${1}" href="{{ product.url }}">
+      {{ product.title }}
+    </a>
+    """
+
+  'Liquid quick checkout button':
+    'prefix': 'quick-checkout'
+    'body': """
+    <button type="button" class="button-quick-checkout" data-quick-checkout="[data-product-id='{{ product.id }}']">
+      В один клик
+    </button>
+    """
+
+  'Liquid img asset (local)':
+    'prefix': 'imgass'
+    'body': """
+    <img src="{{ '${1}' | asset_url }}" alt="${2}">
+    """
+
+  'Liquid large first image product':
+    'prefix': 'firstimgprodlarge'
+    'body': """
+    <img src="{{ product.first_image.large_url }}" alt="{{ product.title }}">
+    """
+
+  'Liquid medium first image product':
+    'prefix': 'firstimgprodmedium'
+    'body': """
+    <img src="{{ product.first_image.medium_url }}" alt="{{ product.title }}">
+    """
+
+  'Select page_size':
+    'prefix': 'page_size'
+    'body': """
+    <select name="page_size">
+      {{ "12"   | select_option: page_size, "12" }}
+      {{ "24"   | select_option: page_size, "24" }}
+      {{ "48"   | select_option: page_size, "48" }}
+      {{ "96"   | select_option: page_size, "96" }}
+    </select>
+    """
+
+  'Liquid product.variants':
+    'prefix': 'variants'
+    'body': """
+    {% if product.show_variants? %}
+      <select name="variant_id" data-product-variants>
+        {% for variant in product.variants %}
+          <option value="{{ variant.id }}">{{ variant.title | escape }}</option>
+        {% endfor %}
+      </select>
+    {% else %}
+      <input type="hidden" name="variant_id" value="{{product.variants.first.id}}" >
+    {% endif %}
+    """
+
+  'Liquid product variant first':
+    'prefix': 'variantfirst'
+    'body': """
+    <input type="hidden" name="variant_id" value="{{ product.variants.first.id }}" >
+    """
+
+  'Fixes IE':
+    'prefix': 'fixesie'
+    'body': """
+    <!-- fixes -->
+    <!--[if IE]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <!--[if lt IE 9]>
+    <script src="//css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+    """

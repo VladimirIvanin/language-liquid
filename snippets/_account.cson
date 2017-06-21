@@ -1,0 +1,12 @@
+'.liquid':
+  'Liquid account.title':
+    'prefix': 'accounttitle'
+    'body': '{{ account.title | editable }}'
+
+  'Liquid account.phone':
+    'prefix': 'accountphone'
+    'body': '{{ account.phone | editable }}'
+
+  'Liquid account.email':
+    'prefix': 'accountemail'
+    'body': '{{ account.email | editable }}'

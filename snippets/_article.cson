@@ -1,0 +1,28 @@
+'.liquid':
+  'Liquid article.title':
+    'prefix': 'articletitle'
+    'body': '{{ article.title }}'
+
+  'Liquid article.preview':
+    'prefix': 'articlepreview'
+    'body': '{{ article.preview }}'
+
+  'Liquid article.url':
+    'prefix': 'articleurl'
+    'body': '{{ article.url }}'
+
+  'Liquid article.content':
+    'prefix': 'articlecontent'
+    'body': '{{ article.content }}'
+
+  'Liquid article.id':
+    'prefix': 'articleid'
+    'body': '{{ article.id }}'
+
+  'Liquid article.image':
+    'prefix': 'articleimage'
+    'body': '{{ article.image.large_url }}'
+
+  'Liquid article.author':
+    'prefix': 'articleauthor'
+    'body': '{{ article.author }}'

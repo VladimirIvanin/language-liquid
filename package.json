@@ -1,36 +1,22 @@
 {
-  "name": "language-liquid",
-  "version": "0.6.0",
-  "private": true,
+  "name": "language-liquid-insales",
+  "version": "0.1.0",
   "description": "Liquid language support for Atom.",
   "keywords": [
     "language",
     "liquid",
-    "shopify",
-    "blogs",
-    "markdown",
-    "gfm"
-  ],
-  "author": "Kieran Masterton <kieran@88mph.com> (https://github.com/kieranmasterton)",
-  "contributors": [
-    "David Calhoun (https://github.com/dcalhoun)",
-    "Brenton Horne (https://github.com/fusion809)",
-    "Sebastian Szturo (https://github.com/SebastianSzturo)",
-    "Matt Mischuk (https://github.com/mattmischuk)",
-    "Puranjay Jain (https://github.com/puranjayjain)",
-    "David van Gemeren (https://github.com/burodepeper)",
-    "Rick Davies (https://github.com/rickydazla)"
+    "insales"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/puranjayjain/language-liquid"
+    "url": "https://github.com/VladimirIvanin/language-liquid-insales"
   },
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
   "bugs": {
-    "url": "https://github.com/puranjayjain/language-liquid/issues"
+    "url": "https://github.com/VladimirIvanin/language-liquid-insales/issues"
   },
   "dependencies": {}
 }

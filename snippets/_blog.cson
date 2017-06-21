@@ -1,0 +1,36 @@
+'.liquid':
+  'Liquid blog.articles':
+    'prefix': 'blogarticles'
+    'body': '{{ blog.articles }}'
+
+  'Liquid blog.comments_enabled?':
+    'prefix': 'blogcommentsenabled'
+    'body': '{{ blog.comments_enabled? }}'
+
+  'Liquid blog.handle':
+    'prefix': 'bloghandle'
+    'body': '{{ blog.handle }}'
+
+  'Liquid blog.moderated?':
+    'prefix': 'blogmoderated'
+    'body': '{{ blog.moderated? }}'
+
+  'Liquid blog.id':
+    'prefix': 'blogid'
+    'body': '{{ blog.id }}'
+
+  'Liquid blog.url':
+    'prefix': 'blogurl'
+    'body': '{{ blog.url }}'
+
+  'Liquid blog.tags':
+    'prefix': 'blogtags'
+    'body': '{{ blog.tags }}'
+
+  'Liquid blog.title':
+    'prefix': 'blogtitle'
+    'body': '{{ blog.title }}'
+
+  'Liquid blog.articles_count':
+    'prefix': 'blogarticles_count'
+    'body': '{{ blog.articles_count }}'

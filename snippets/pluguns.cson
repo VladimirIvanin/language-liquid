@@ -1,0 +1,53 @@
+'.liquid, html':
+  'swiper':
+    'prefix': 'swipercontainer'
+    'body': """
+    <!-- Slider main container -->
+    <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+    </div>
+    """
+
+  'Magnific Popup':
+    'prefix': 'magnificpop'
+    'body': """
+    <div id="${1}" class="mfp-hide${2}">
+      ${3}
+    </div>
+    """
+
+  'Font Awesome icons':
+    'prefix': 'fai'
+    'body': """
+    <i class="fa fa-${1}" aria-hidden="true"></i>
+    """
+
+  'Remodal Popup':
+    'prefix': 'remodal'
+    'body': """
+    <div class="remodal" data-remodal-id="modal">
+      <button data-remodal-action="close" class="remodal-close"></button>
+      <h1>Remodal</h1>
+      <p>
+        Responsive, lightweight, fast, synchronized with CSS animations, fully customizable modal window plugin with declarative configuration and hash tracking.
+      </p>
+      <br>
+      <button data-remodal-action="cancel" class="remodal-cancel">Cancel</button>
+      <button data-remodal-action="confirm" class="remodal-confirm">OK</button>
+    </div>
+    """

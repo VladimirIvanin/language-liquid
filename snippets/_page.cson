@@ -1,0 +1,8 @@
+'.liquid':
+  'Liquid page.title':
+    'prefix': 'paget'
+    'body': '{{ page.title }}'
+
+  'Liquid page.content':
+    'prefix': 'pagec'
+    'body': '{{ page.content }}'

@@ -1,0 +1,40 @@
+'.liquid':
+  'Liquid variant.id':
+    'prefix': 'variantid'
+    'body': '{{ variant.id }}'
+
+  'Liquid variant.weight':
+    'prefix': 'variantweight'
+    'body': '{{ variant.weight }}'
+
+  'Liquid variant.title':
+    'prefix': 'varianttitle'
+    'body': '{{ variant.title }}'
+
+  'Liquid variant.price':
+    'prefix': 'variantprice'
+    'body': '{{ variant.price }}'
+
+  'Liquid variant.old_price':
+    'prefix': 'variantold_price'
+    'body': '{{ variant.old_price }}'
+
+  'Liquid variant.barcode':
+    'prefix': 'variantbarcode'
+    'body': '{{ variant.barcode }}'
+
+  'Liquid variant.sku':
+    'prefix': 'variantsku'
+    'body': '{{ variant.sku }}'
+
+  'Liquid variant.quantity':
+    'prefix': 'variantquantity'
+    'body': '{{ variant.quantity }}'
+
+  'Liquid variant.option_values':
+    'prefix': 'variantoption_values'
+    'body': '{{ variant.option_values }}'
+
+  'Liquid variant.available':
+    'prefix': 'variantavailable'
+    'body': '{{ variant.available }}'

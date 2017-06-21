@@ -1,0 +1,4 @@
+'.liquid':
+  'Liquid content_for_layout':
+    'prefix': 'contentfl'
+    'body': '{{ content_for_layout }}'

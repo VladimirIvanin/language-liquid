@@ -1,0 +1,48 @@
+'.liquid':
+  'Liquid item.product':
+    'prefix': 'itemproduct'
+    'body': '{{ item.product }}'
+
+  'Liquid item.comment':
+    'prefix': 'itemcomment'
+    'body': '{{ item.comment }}'
+
+  'Liquid item.id':
+    'prefix': 'itemid'
+    'body': '{{ item.id }}'
+
+  'Liquid item.weight':
+    'prefix': 'itemweight'
+    'body': '{{ item.weight }}'
+
+  'Liquid item.total_weight':
+    'prefix': 'itemtotal_weight'
+    'body': '{{ item.total_weight }}'
+
+  'Liquid item.url':
+    'prefix': 'itemurl'
+    'body': '{{ item.url }}'
+
+  'Liquid item.unit':
+    'prefix': 'itemunit'
+    'body': '{{ item.unit }}'
+
+  'Liquid item.variant':
+    'prefix': 'itemvariant'
+    'body': '{{ item.variant }}'
+
+  'Liquid item.sale_price':
+    'prefix': 'itempsale_price'
+    'body': '{{ item.sale_price }}'
+
+  'Liquid item.title':
+    'prefix': 'itemptitle'
+    'body': '{{ item.title }}'
+
+  'Liquid item.total_price':
+    'prefix': 'itemptotal_price'
+    'body': '{{ item.total_price }}'
+
+  'Liquid item.quantity':
+    'prefix': 'itemquantity'
+    'body': '{{ item.quantity }}'

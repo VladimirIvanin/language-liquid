@@ -1,0 +1,4 @@
+'.liquid':
+  'Liquid comment.created_at':
+    'prefix': 'commentcreated'
+    'body': '{{ comment.created_at | date: "%d.%m.%Y" }}'

@@ -1,0 +1,97 @@
+'.liquid':
+  'Common js search':
+    'prefix': 'searchcommon'
+    'body': """
+    <form action="/search" method="get">
+      <input type="hidden" name="lang" value="{{ language.locale }}">
+      <input type="text" name="q" value="" placeholder="Поиск" data-search-field />
+      <button type="submit">Поиск</button>
+      <div data-search-result></div>
+    </form>
+    """
+
+  'Common js buy button':
+    'prefix': 'buybutton'
+    'body': """
+    <button type="submit" data-item-add>
+      Добавить в корзину
+    </button>
+    """
+
+  'Common js data-quantity':
+    'prefix': 'quantity'
+    'body': """
+    <div data-quantity>
+      <input type="text" name="quantity" value="1" />
+      <span data-quantity-change="-1">-</span>
+      <span data-quantity-change="1">+</span>
+    </div>
+    """
+
+  'Common js compare add':
+    'prefix': 'compareadd'
+    'body': """
+    <button data-compare-add="{{ product.id }}">
+      Добавить товар в сравнение
+    </button>
+    """
+
+  'Common js compare delete':
+    'prefix': 'comparedelete'
+    'body': """
+    <button data-compare-delete="{{ product.id }}">
+      Удалить из сравнения
+    </button>
+    """
+
+  'Common js cart':
+    'prefix': 'cartcommon'
+    'body': """
+    <form action="{{ cart_url }}" method="post" data-cart-form>
+      <input type="hidden" name="_method" value="put">
+      <input type="hidden" name="make_order" value="">
+      {% for item in cart.items %}
+        <div data-product-id="{{ item.product.id }}" data-item-id="{{ item.id }}">
+          <div data-quantity>
+            <input type="text" name="cart[quantity][{{ item.id }}]" value="{{ item.quantity }}">
+            <span data-quantity-change="-1">-</span>
+            <span data-quantity-change="1">+</span>
+          </div>
+          <span data-item-delete="{{ item.id }}">X</span>
+        </div>
+      {% endfor %}
+      <div>
+        <label> Купон </label>
+        <input type="text" name="cart[coupon]" value="{{ cart.coupon }}" />
+        <input type="button" value="Применить" data-coupon-submit/>
+      </div>
+      <input type="submit" value="Оформить" data-cart-submit>
+      <button data-cart-clear>Очистить</button>
+      <button data-cart-update>Обновить</button>
+    </form>
+    """
+
+  'Common js product':
+    'prefix': 'prodformcommon'
+    'body': """
+    <form action="{{ cart_url }}" method="post" data-product-id="{{ product.id }}">
+      {% if product.show_variants? %}
+        <select name="variant_id" data-product-variants>
+          {% for variant in product.variants %}
+            <option value="{{ variant.id }}">{{ variant.title | escape }}</option>
+          {% endfor %}
+        </select>
+      {% else %}
+        <input type="hidden" name="variant_id" value="{{product.variants.first.id}}" >
+      {% endif %}
+      <input type="text" name="comment" value="">
+      <div data-quantity>
+        <input type="text" name="quantity" value="1" />
+        <span data-quantity-change="-1">-</span>
+        <span data-quantity-change="1">+</span>
+      </div>
+      <button type="submit" data-item-add>
+        Добавить в корзину
+      </button>
+    </form>
+    """

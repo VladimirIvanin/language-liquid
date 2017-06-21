@@ -1,0 +1,207 @@
+'.liquid':
+  'Liquid If Collection Products Size':
+    'prefix': 'ifcps'
+    'body': """
+    {% if collection.products.size > 0 %}
+      ${1}
+    {% endif %}
+    """
+
+  'Liquid form':
+    'prefix': 'form'
+    'body': """
+    {% form '${1}', ${2} %}
+      ${3}
+    {% endform %}
+    """
+
+  'Liquid include with':
+    'prefix': 'incwith'
+    'body': """
+    {% include "${1}" with ${2} %}
+    """
+
+  'Liquid include':
+    'prefix': 'inc'
+    'body': """
+    {% include "${1}" %}
+    """
+
+  'Liquid directive':
+    'prefix': '%'
+    'body': """
+    {% ${1} %}
+    """
+
+  'Liquid var':
+    'prefix': '{}'
+    'body': """
+    {{ ${1} }}
+    """
+
+  'Liquid else':
+    'prefix': 'else'
+    'body': """
+    {% else %}
+    """
+
+  'Liquid capture':
+    'prefix': 'cap'
+    'body': """
+    {% capture ${1} %}
+    ${2}
+    {% endcapture %}
+    """
+
+  'Liquid assign':
+    'prefix': 'ass'
+    'body': """
+    {% assign ${1} = ${2} %}
+    """
+
+  'Liquid tablerow':
+    'prefix': 'tabrow'
+    'body': """
+    {% tablerow ${1} %}
+      ${2}
+    {% endtablerow %}
+    """
+
+  'Liquid for':
+    'prefix': 'for'
+    'body': """
+    {% for ${1} %}
+      ${2}
+    {% endfor %}
+    """
+
+  'Liquid cycle':
+    'prefix': 'cycle'
+    'body': """
+    {% cycle '${1}' %}
+    """
+
+  'Liquid case':
+    'prefix': 'case'
+    'body': """
+    {% case ${1} %}
+      {% when ${2} %}
+        ${3}
+      {% else %}
+        ${4}
+    {% endcase %}
+    """
+
+  'Liquid unless (inline)':
+    'prefix': 'unlin'
+    'body': '{% unless ${1} %}${2}{% endunless %}'
+
+  'Liquid unless':
+    'prefix': 'unl'
+    'body': """
+    {% unless ${1} %}
+      ${2}
+    {% endunless %}
+    """
+
+  'Liquid if / elseif':
+    'prefix': 'ifelif'
+    'body': """
+    {% if ${1} %}
+      ${2}
+    {% elsif ${3} %}
+      ${4}
+    {% endif %}
+    """
+
+  'Liquid if':
+    'prefix': 'if'
+    'body': """
+    {% if ${1} %}
+      ${2}
+    {% endif %}
+    """
+
+  'Liquid raw':
+    'prefix': 'raw'
+    'body': """
+    {% raw %} ${1} {% endraw %}
+    """
+
+  'Liquid comment':
+    'prefix': 'comm'
+    'body': """
+    {% comment %}
+      ${1}
+    {% endcomment %}
+    """
+
+  'Liquid paginate by':
+    'prefix': 'pagby'
+    'body': """
+    {% paginate ${1} by ${2} %}
+      ${3}
+    {% endpaginate %}
+    """
+
+  'Liquid for product in collection.products':
+    'prefix': 'forprodincp'
+    'body': """
+    {% for product in collection.products %}
+      ${1}
+    {% endfor %}
+    """
+
+  'Liquid for block in block_lists.handle.blocks':
+    'prefix': 'forblockin'
+    'body': """
+    {% for block in block_lists.handle${1}.blocks %}
+      ${2}
+    {% endfor %}
+    """
+
+  'Liquid for item in cart.items':
+    'prefix': 'foritemcart'
+    'body': """
+    {% for item in cart.items %}
+      ${1}
+    {% endfor %}
+    """
+
+  'Liquid for link in linklists.handle.links':
+    'prefix': 'forlink'
+    'body': """
+    <ul class="${2}">
+    {% for link in linklists.handle${1}.links %}
+      <li class="${3}{% if link.current? %}is-active{% endif %}" >
+        <a href="{{ link.url }}">{{ link.title }}</a>
+      </li>
+    {% endfor %}
+    </ul>
+    """
+
+  'Liquid bundle_component in product.bundle_components':
+    'prefix': 'forbundlec'
+    'body': """
+    {% if product.is_bundle %}
+      {% for bundle_component in product.bundle_components %}
+        {{ bundle_component.product.title }}
+      {% endfor %}
+    {% endif %}
+    """
+
+  'Liquid characteristic in product.properties.handle${1}.characteristics':
+    'prefix': 'forcharacteristic'
+    'body': """
+    {% for characteristic in product.properties.handle${1}.characteristics %}
+      ${2}
+    {% endfor %}
+    """
+
+  'Liquid property in {% for property in product.properties %}':
+    'prefix': 'forpropertyproduct'
+    'body': """
+    {% for property in product.properties %}
+      ${1}
+    {% endfor %}
+    """
