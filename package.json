@@ -1,6 +1,6 @@
 {
   "name": "language-liquid-insales",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Liquid language support for Atom.",
   "keywords": [
     "language",
